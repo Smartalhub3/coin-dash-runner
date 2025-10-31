@@ -1,0 +1,8 @@
+{
+  "name": "Coin Dash Runner (Global Edition)",
+  "short_name": "CoinDash",
+  "start_url": ".",
+  "display": "standalone",
+  "background_color": "#071022",
+  "description": "A lightweight polished endless runner — Global-ready (EN/AR). Made by Saudz Games."
+}

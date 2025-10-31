@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="en" dir="auto">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Coin Dash Runner — Global Edition</title>
+  <link rel="stylesheet" href="style.css" />
+  <meta name="description" content="Run, jump and collect coins in a smooth lightweight endless runner. Global-ready (EN/AR).">
+</head>
+<body>
+  <div id="wrapper">
+    <header id="splash" class="fade-in">
+      <div class="logo">
+        <svg width="110" height="46" viewBox="0 0 110 46" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+          <rect x="2" y="2" width="42" height="42" rx="6" fill="#ff5c5c"/>
+          <circle cx="80" cy="24" r="12" fill="#ffd166"/>
+          <text x="58" y="33" font-family="Segoe UI, Tahoma, Arial" font-size="14" fill="#ffffff">Coin Dash</text>
+        </svg>
+      </div>
+      <h1 id="title">Coin Dash Runner</h1>
+      <p id="subtitle" data-i18n="subtitle">Run, jump & collect coins — Beat your best score!</p>
+      <div class="meta">
+        <button id="startBtn" class="btn primary">Play</button>
+        <button id="settingsBtn" class="btn">Settings</button>
+      </div>
+      <div class="credit">Made by <span id="devName">Saudz Games</span></div>
+    </header>
+
+    <main id="game-area" class="hidden">
+      <div id="parallax">
+        <div class="layer l-back"></div>
+        <div class="layer l-mid"></div>
+        <div class="layer l-front"></div>
+      </div>
+      <canvas id="gameCanvas" width="900" height="450" aria-label="Game canvas"></canvas>
+
+      <div id="hud">
+        <div class="score">Coins: <span id="coins">0</span></div>
+        <div class="best">Best: <span id="bestScore">0</span></div>
+        <div class="controls">
+          <button id="pauseBtn" class="btn">Pause</button>
+          <button id="muteBtn" class="btn">Mute</button>
+        </div>
+      </div>
+
+      <div id="overlay" class="hidden">
+        <div class="panel">
+          <h2 id="overlayTitle">Game Over</h2>
+          <p id="overlayMessage">You earned <strong id="finalCoins">0</strong> coins.</p>
+          <div class="actions">
+            <button id="retryBtn" class="btn primary">Retry</button>
+            <button id="reviveBtn" class="btn">Watch Ad to Continue</button>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <footer id="footer" class="muted">Tip: Tap / Click / Space to jump • Auto language: English / العربية</footer>
+  </div>
+
+  <script src="game.js"></script>
+</body>
+</html>
